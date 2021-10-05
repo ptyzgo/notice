@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  nginx-google:
+    build: "."
+    container_name: "nginx-google"
+    restart: "always"
+    volumes: 
+      - "nginx-google-log:/var/log/nginx/"
+    ports: 
+      - "80:80"
+  
+volumes: 
+  nginx-google-log:
