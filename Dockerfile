@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM debian
 RUN apt-get update && \
     apt-get install git gcc libpcre3-dev libssl-dev make wget -y && \
     git clone https://github.com/cuber/ngx_http_google_filter_module && \
